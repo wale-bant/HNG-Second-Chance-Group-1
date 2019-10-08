@@ -209,7 +209,6 @@ body {
 }
 
 .primary-1 {
-  background: green;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -226,7 +225,6 @@ body {
 }
 
 .primary-2 {
-  background: yellow;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
