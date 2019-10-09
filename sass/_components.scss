@@ -1,6 +1,11 @@
 //SIDEBAR
+.user-nav {
+    display: flex;
+    flex-direction: column;
+}
 
 .profile{
+    text-align: center;
     margin-top: 2rem;
     padding-left: 1rem;
 }
@@ -105,7 +110,8 @@
 .legal {
     font-size: 1.2rem;
     align-content: center;
-    padding: 3rem;
+    padding: 0 3rem;
+    display: flex;
     color: var(--color-grey-light-5);
 
     @media (max-width: $bp-medium) {
@@ -122,23 +128,76 @@
         flex: 1;
         flex-direction: column;
 
-        .dashboard-details{
-    
-        }
-        .dashboard-task{
-    
-        }
+     .dashboard-task{
+         height: 400px;
+         margin-right: 1rem;
+         background: green;
+     }
     }
 
     &-2{
         display: flex;
-        flex: 0 0 30%;
+        flex: 0 0 25%;
+        flex-direction: column;
+        justify-content: space-between;
+
         .dashboard-notifications{
 
         }
-        .dashboard-mentors{
-
+        //MENTOR
+        .mentor-header{
+            margin-bottom: 2rem;
         }
+        .dashboard-mentors{
+            border: 1px solid var(--color-grey-light-6);
+            padding: 1rem .5rem;
+
+            .mentor {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+
+                &__user {
+                    margin-bottom: 1rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    @media(max-width: $bp-medium) {
+                        margin-bottom: 2rem;
+                        margin-top: -1rem;
+                    }
+                }
+
+                &__photo {
+                    border-radius: 50%;
+                    margin-right: 2rem;
+                }
+
+                &__user-box {
+                    margin-right: auto;
+
+                }
+
+                &__user-name {
+                    color: var(--color-grey-dark-2);
+                    font-weight: 700;
+                    text-transform: uppercase;
+                }
+
+                &__user-country {
+                    color: var(--color-grey-dark-2);
+                }
+
+                .fa-user{
+                    font-size: 4rem;
+                }
+                .fa-ellipsis-v{
+                    padding-right: 3rem;
+                }
+            }
+        }
+
     }
 }
 
@@ -148,4 +207,23 @@
 
 .progress{
 
+}
+
+//CARD
+.card {
+    padding: 1rem 0;
+    width: 150px;
+
+    &-num{
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+}
+
+.fas-dashboard {
+    color: var(--color-grey-light-5);
+    font-size: 3rem;
+}
+.card-title{
+    color: var(--color-grey-light-5)
 }
