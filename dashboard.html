@@ -9,115 +9,206 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
         <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
         <link rel="stylesheet" href="css/main.css">
-        <script src="https://kit.fontawesome.com/f00b4c99f8.js" crossorigin="anonymous"></script>
     </head>
-<body>
+    <body>
     <!-- CODE BY NISCOLINX -->
     <div class="content">
         <div class="sidebar">
-            <div class="profile">
-                <img src="img/woman-camera.jpg" alt="profile_image" class="profile_image">
-                <p class="profile_username">Welcome User Name</p>
+            <div>
+                <div class="profile">
+                    <img src="img/woman-camera.jpg" alt="profile_image" class="profile_image">
+                    <p class="profile_username">Welcome User Name</p>
+                </div>
+                <nav class="user-nav">
+                     <ul class="side-nav">
+                         <li class="side-nav__item side-nav__item--active">
+                             <a href="#blank" class="side-nav__link">
+                                 <svg class="side-nav__icon">
+                                     <use xlink:href="img/sprite.svg#icon-home" />
+                                 </svg>
+                                 <span>Home</span>
+                                </a>
+                         </li>
+                         <li class="side-nav__item">
+                             <a href="#blank" class="side-nav__link">
+                                 <svg class="side-nav__icon">
+                                     <use xlink:href="img/sprite.svg#icon-map" />
+                                    </svg>
+                                    <span>Classroom</span>
+                                </a>
+                            </li>
+                            <li class="side-nav__item">
+                                <a href="#blank" class="side-nav__link">
+                                    <svg class="side-nav__icon">
+                                        <use xlink:href="img/sprite.svg#icon-key" />
+                                    </svg>
+                                    <span>Logout</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="legal">
+                    &copy; hng internship &dash; 2019. All rights reserved
+                </div>
             </div>
-             <nav>
-                 <ul class="side-nav">
-                     <li class="side-nav__item side-nav__item--active">
-                         <a href="#blank" class="side-nav__link">
-                             <svg class="side-nav__icon">
-                                 <use xlink:href="img/sprite.svg#icon-home" />
-                             </svg>
-                             <span>Home</span>
-                         </a>
-                     </li>
-                     <li class="side-nav__item">
-                         <a href="#blank" class="side-nav__link">
-                             <svg class="side-nav__icon">
-                                 <use xlink:href="img/sprite.svg#icon-map" />
-                                </svg>
-                                <span>Classroom</span>
-                            </a>
-                        </li>
-                        <li class="side-nav__item">
-                            <a href="#blank" class="side-nav__link">
-                                <svg class="side-nav__icon">
-                                    <use xlink:href="img/sprite.svg#icon-key" />
-                                </svg>
-                                <span>Logout</span>
-                            </a>
-                        </li>
-                    </ul>
-
-                 <div class="legal">
-                     &copy; hng internship &dash; 2019. All rights reserved
-                 </div>
-             </nav>
-        </div>
-        <div class="main-view">
-            <div class="main-view__primary">
-                <div class="primary-1">
-                    <div class="dashboard-details">
-                        <div class="container">
-                        
-                            <div class="row my-3">
-                                <div class="col-md-4">
-                                    <div class="card text-center">
-                                        <div class="card-block">
-                                            <h2><i class="fas fa-signal"></i></h2>
-                                            <p>3</p>
-                                            <h4 class="card-title">Stage</h4>
+            <div class="container">
+                
+                <div class="main-view">
+                    <div class="main-view__primary">
+                        <div class="primary-1">
+                            <div class="dashboard-details">
+                                <div class="row my-3">
+                                        <div class="col-md-3">
+                                            <div class="card text-center">
+                                                <div class="card-block">
+                                                    <h2><i class="fas-dashboard fas fa-signal"></i></h2>
+                                                    <p class="card-num">3</p>
+                                                    <h4 class="card-title">Stage</h4>
+                                                </div>
+                                                
+                                            </div>
                                         </div>
-                                       
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="card text-center">
-                                        <div class="card-block">
-                                            <h2><i class="fas fa-check-square"></i></h2>
-                                            <p>1</p>
-                                            <h4 class="card-title">Completed tasks</h4>
+                                        <div class="col-md-3">
+                                            <div class="card text-center">
+                                                <div class="card-block">
+                                                    <h2><i class="fas-dashboard fas fa-check-square"></i></h2>
+                                                    <p class="card-num">1</p>
+                                                    <h4 class="card-title">Completed tasks</h4>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="card text-center">
+                                                <div class="card-block">
+                                                    <h2><i class="fas-dashboard fas fa-bell"></i></h2>
+                                                    <p class="card-num">2</p>
+                                                    <h4 class="card-title">Notifications</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="card text-center">
+                                                <div class="card-block">
+                                                    <h2><i class="fas-dashboard fas fa-exclamation-circle"></i></h2>
+                                                    <p class="card-num">4</p>
+                                                    <h4 class="card-title">Reports</h4>
+                                                </div>
+                                            </div>
                                         </div>
                                         
                                     </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="card text-center">
-                                        <div class="card-block">
-                                            <h2><i class="fas fa-bell"></i></h2>
-                                            <p>2</p>
-                                            <h4 class="card-title">Notifications</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="card text-center">
-                                        <div class="card-block">
-                                            <h2><i class="fa fa-address-card-o fa-3x"></i></h2>
-                                            <p>2</p>
-                                            <h4 class="card-title">Notifications</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                                
+                                    
+                                    
                             </div>
-                        
+                            <div class="dashboard-task">
+                                <h3 class="task-header">TASK</h3>
+                            </div>
                         </div>
-
+                        <div class="primary-2">
+                            <div class="dashboard-notifications">
+                                <h3 class="notification__header">
+                                    NOTIFICATIONS
+                                </h3>
+                            </div>
+                            <div class="dashboard-mentors">
+                                <h3 class="mentor__header">MENTORS</h3>
+                                <figure class="mentor">
+                                    <figcaption class="mentor__user">
+                                        <i class="fas fa-user mentor__photo"></i>
+                                        <div class="mentor__user-box">
+                                            <p class="mentor__user-name">TomisinLaude</p>
+                                            <p class="mentor__user-country">Ghana</p>
+                                        </div>
+                                        <span class="mentor__gap"></span>
+                                        <div class="mentor__dot"><i class="fas fa-ellipsis-v"></i></div>
+                                    </figcaption>
+                                </figure>
+                                <figure class="mentor">   
+                                    <figcaption class="mentor__user">
+                                        <i class="fas fa-user mentor__photo"></i>
+                                        <div class="mentor__user-box">
+                                            <p class="mentor__user-name">Professor</p>
+                                            <p class="mentor__user-country">Congo</p>
+                                        </div>
+                                        <span class="mentor__gap"></span>
+                                        <div class="mentor__dot"><i class="fas fa-ellipsis-v"></i></div>
+                                    </figcaption>
+                                </figure>
+                                <figure class="mentor">   
+                                    <figcaption class="mentor__user">
+                                        <i class="fas fa-user mentor__photo"></i>
+                                        <div class="mentor__user-box">
+                                            <p class="mentor__user-name">Xylus</p>
+                                            <p class="mentor__user-country">Mississipi</p>
+                                        </div>
+                                        <span class="mentor__gap"></span>
+                                        <div class="mentor__dot"><i class="fas fa-ellipsis-v"></i></div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
                     </div>
-                    <div class="dashboard-task">task</div>
-                </div>
-                <div class="primary-2">
-                    <div class="dashboard-notifications">
-                        dashboard-notifications
+                    <div class="main-view__secondary">
+                            <div class="dashboard-interns">
+                                <h3 class="intern__header">TEAM MEMBERS</h3>
+                                
+                                <figure class="intern">
+                                    <figcaption class="intern__user">
+                                        <i class="fas fa-user intern__photo"></i>
+                                        <div class="intern__user-box">
+                                            <p class="intern__user-name">user 1</p>
+                                            <p class="intern__user-country">Frontend Developer</p>
+                                        </div>
+                                        <span class="intern__gap"></span>
+                                        <div class="intern__dot"><i class="fas fa-ellipsis-v"></i></div>
+                                    </figcaption>
+                                </figure>
+                                <figure class="intern">
+                                    <figcaption class="intern__user">
+                                        <i class="fas fa-user intern__photo"></i>
+                                        <div class="intern__user-box">
+                                            <p class="intern__user-name">user 2</p>
+                                            <p class="intern__user-country">Backend Developer</p>
+                                        </div>
+                                        <span class="intern__gap"></span>
+                                        <div class="intern__dot"><i class="fas fa-ellipsis-v"></i></div>
+                                    </figcaption>
+                                </figure>
+                                <figure class="intern">
+                                    <figcaption class="intern__user">
+                                        <i class="fas fa-user intern__photo"></i>
+                                        <div class="intern__user-box">
+                                            <p class="intern__user-name">user 3</p>
+                                            <p class="intern__user-country">UI/UX</p>
+                                        </div>
+                                        <span class="intern__gap"></span>
+                                        <div class="intern__dot"><i class="fas fa-ellipsis-v"></i></div>
+                                    </figcaption>
+                                </figure>
+                                <figure class="intern">
+                                    <figcaption class="intern__user">
+                                        <i class="fas fa-user intern__photo"></i>
+                                        <div class="intern__user-box">
+                                            <p class="intern__user-name">user 4</p>
+                                            <p class="intern__user-country">Digital Marketer</p>
+                                        </div>
+                                        <span class="intern__gap"></span>
+                                        <div class="intern__dot"><i class="fas fa-ellipsis-v"></i></div>
+                                    </figcaption>
+                                </figure>
+                        </div>
+                        <div class="progress">
+                            <h3 class="progress__header">
+                                PROGRESS
+                            </h3>
+                        </div> 
                     </div>
-                    <div class="dashboard-mentors">Mentors</div>
                 </div>
-            </div>
-            <div class="main-view__secondary">
-                <div class="team-members">team-members</div>
-                <div class="progress">progress</div>
             </div>
         </div>
-    </div>
+        <script src="https://kit.fontawesome.com/f00b4c99f8.js" crossorigin="anonymous"></script>
     <!-- ENDED HERE BY NISCOLINX -->
 </body>
 

@@ -1,16 +1,23 @@
 //SIDEBAR
+.user-nav {
+    display: flex;
+    flex-direction: column;
+}
 
-.profile{
+.profile {
+    text-align: center;
     margin-top: 2rem;
     padding-left: 1rem;
 }
-.profile_image{
+
+.profile_image {
     width: 150px;
     height: 150px;
     border-radius: 50%;
+    cursor: pointer;
 }
 
-.profile_username{
+.profile_username {
     font-size: 20px;
     padding: 1rem 0;
     border-bottom: var(--line);
@@ -105,7 +112,8 @@
 .legal {
     font-size: 1.2rem;
     align-content: center;
-    padding: 3rem;
+    padding: 1rem 3rem;
+    display: flex;
     color: var(--color-grey-light-5);
 
     @media (max-width: $bp-medium) {
@@ -115,37 +123,194 @@
 
 //DASHBOARD
 
-.primary{
+.primary {
 
-    &-1{
+    &-1 {
         display: flex;
         flex: 1;
         flex-direction: column;
 
-        .dashboard-details{
-    
-        }
-        .dashboard-task{
-    
+        .dashboard-task {
+            height: 400px;
+            margin-right: 1rem;
+
+            .task-header {
+                font-weight: 600;
+                margin-top: 2rem;
+            }
         }
     }
 
-    &-2{
+    &-2 {
         display: flex;
+        margin-top: 1rem;
         flex: 0 0 30%;
-        .dashboard-notifications{
+        flex-direction: column;
+        justify-content: space-between;
 
-        }
-        .dashboard-mentors{
+        .dashboard-notifications {
 
+            .notification__header {
+                font-weight: 600;
+
+            }
         }
+
+        //MENTOR
+        .mentor__header {
+            margin-bottom: 2rem;
+            font-weight: 600;
+        }
+
+        .dashboard-mentors {
+            border: 1px solid var(--color-grey-light-6);
+            padding: 1rem .5rem;
+            border-radius: 10px;
+
+            .mentor {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+
+                &__user {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    @media(max-width: $bp-medium) {
+                        margin-bottom: 2rem;
+                        margin-top: -1rem;
+                    }
+                }
+
+                &__photo {
+                    border-radius: 50%;
+                    margin-right: 2rem;
+                }
+
+                &__user-box {
+                    margin-right: auto;
+
+                }
+
+                &__user-name {
+                    color: var(--color-grey-dark-2);
+                    font-weight: 700;
+                    text-transform: uppercase;
+                }
+
+                &__user-country {
+                    color: var(--color-grey-dark-2);
+                }
+
+                &__gap {
+                    padding: 0 4rem;
+                }
+
+                .fa-user {
+                    font-size: 4rem;
+                }
+
+                .fa-ellipsis-v {
+                    padding-right: 1rem;
+                    cursor: pointer;
+                }
+            }
+        }
+
     }
 }
 
-.team-members{
+//INTERN
+.dashboard-interns {
+    flex: 0 0 40%;
+
+    .intern {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+
+        &__header {
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        &__user {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            @media(max-width: $bp-medium) {
+                margin-bottom: 2rem;
+                margin-top: -1rem;
+            }
+        }
+
+        &__photo {
+            border-radius: 50%;
+            margin-right: 2rem;
+        }
+
+        &__user-box {
+            margin-right: auto;
+
+        }
+
+        &__user-name {
+            color: var(--color-grey-dark-2);
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        &__user-country {
+            color: var(--color-grey-dark-2);
+        }
+
+        &__gap {
+            padding: 0 4rem;
+        }
+
+        .fa-user {
+            font-size: 4rem;
+        }
+
+        .fa-ellipsis-v {
+            padding-right: 1rem;
+            cursor: pointer;
+        }
+    }
 
 }
 
-.progress{
+.progress {
+    margin-left: .5rem;
+    flex: 1;
+    height: auto;
+    background: var(--color-grey-light-2);
 
+     &__header {
+        font-weight: 600;
+
+    }
+}
+
+//CARD
+.card {
+    padding: 1rem 0;
+    width: 150px;
+    cursor: pointer;
+
+    &-num {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+}
+
+.fas-dashboard {
+    color: var(--color-grey-light-5);
+    font-size: 3rem;
+}
+
+.card-title {
+    color: var(--color-grey-light-5)
 }
