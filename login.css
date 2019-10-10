@@ -108,3 +108,12 @@
 		justify-content: flex-end;
 		align-self: flex-end;
 	}
+
+	@media screen and (max-width: 400px){
+
+		.container{
+			transform: none;
+			overflow-x: hidden;
+		}
+	
+	}
