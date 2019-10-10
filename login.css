@@ -1,4 +1,9 @@
 body {
+	width: 500px;
+    margin: 0 auto;
+}
+
+body {
 	position: absolute;
 	left: 28.2%;
 	right: 28.2%;
